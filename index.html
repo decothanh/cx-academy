@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CX Academy - Wisdom – Peace and Money</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .course-card {
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+            break-inside: avoid;
+        }
+        .course-card:hover {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .checklist-item {
+            border-left: 3px solid #10b981;
+            padding-left: 12px;
+            margin: 8px 0;
+        }
+        .price-tag {
+            font-size: 0.875rem;
+            color: #6b7280;
+            font-weight: 400;
+        }
+        @media print {
+            body { 
+                -webkit-print-color-adjust: exact; 
+                print-color-adjust: exact;
+            }
+            .no-print { display: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/b81a5f81726ed4691fe96337a26bf158" alt="CX Academy Logo" class="h-12 w-auto">
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-900">CX Academy</h1>
+                        <p class="text-sm text-gray-600">Wisdom – Peace and Money</p>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sm text-gray-600">Học viện đào tạo Trader chuyên nghiệp</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Hệ Thống Đào Tạo Trader Chuyên Nghiệp</h2>
+            <p class="text-xl text-white opacity-90 mb-8">Dựa trên triết lý "The Richness Trader Notes" - Trí tuệ, Bình an và Tiền</p>
+            <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6 max-w-3xl mx-auto">
+                <p class="text-white text-lg">7 khóa học được thiết kế theo hệ thống X2 Framework, từ cơ bản đến chuyên gia, giúp bạn xây dựng nền tảng giao dịch vững chắc và phát triển tư duy quản trị vốn hiệu quả.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Summary Table -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Tổng Quan Các Khóa Học</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Khóa Học</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Cấp Độ</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Thời Gian</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Học Phí</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-900">Huấn Luyện Pro Trader Advance</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Institutional</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">3-6 tháng</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 text-right price-tag">50,000,000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-900">Huấn luyện Pro Trader Mass</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Advanced</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">2-3 tháng</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 text-right price-tag">35,000,000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-900">Huấn luyện Trader có kinh nghiệm những vẫn đang lỗ</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Specialized</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">1.5-2 tháng</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 text-right price-tag">25,000,000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-900">Phân tích kỹ thuật thực chiến</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Core Skills</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">1-1.5 tháng</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 text-right price-tag">15,000,000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-900">Advances tools</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Professional</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">1-1.5 tháng</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 text-right price-tag">6,000,000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-900">Basic tools</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Foundation</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">0.5-1 tháng</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 text-right price-tag">5,000,000 VNĐ</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-gray-900">Khởi sự kinh doanh vốn hiệu quả với Copytrade</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Entry Level</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">0.5 tháng</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 text-right price-tag">3,000,000 VNĐ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Detail Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-gray-900 mb-12 text-center">Chi Tiết Các Khóa Học</h3>
+            
+            <!-- Course 1: Pro Trader Advance -->
+            <div class="course-card bg-white rounded-lg p-8 mb-12">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900">Huấn Luyện Pro Trader Advance</h4>
+                            <span class="price-tag bg-gray-100 px-3 py-1 rounded-full">50,000,000 VNĐ</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Khóa học cấp độ tổ chức, tập trung vào tư duy quản trị quỹ chuyên sâu và các kỹ thuật giao dịch institutional-level.</p>
+                        
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3">Checklist Huấn Luyện:</h5>
+                        <div class="space-y-2">
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Tư duy quản trị quỹ institutional level (Fund Management)</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Phân tích rủi ro và tối ưu hóa portfolio</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Strategies cho tài khoản lớn (trên $100K)</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Quản lý drawdown và capital preservation</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Advanced market structure analysis</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Institutional order flow reading</p>
+                            </div>
+                        </div>
+
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3 mt-6">Definition of Done:</h5>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Quản lý được tài khoản từ $100K trở lên với drawdown < 5%</li>
+                                <li>• Áp dụng thành thạo các chiến lược institutional</li>
+                                <li>• Đạt ROI ổn định 10-15%/tháng với risk management chuyên nghiệp</li>
+                                <li>• Có khả năng training và mentoring cho trader khác</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/5d0672ff-ce71-49a1-bd7b-8a5d6e2cd90e" alt="Pro Trader Advance" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 2: Pro Trader Mass -->
+            <div class="course-card bg-white rounded-lg p-8 mb-12">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/1ab89559-870c-48fb-8f8c-f66632c904ba" alt="Pro Trader Mass" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900">Huấn luyện Pro Trader Mass</h4>
+                            <span class="price-tag bg-gray-100 px-3 py-1 rounded-full">35,000,000 VNĐ</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Đào tạo hệ thống giao dịch hoàn chỉnh, từ quy trình phân tích đến quản trị vị thế và tự thiết kế bài trade riêng.</p>
+                        
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3">Checklist Huấn Luyện:</h5>
+                        <div class="space-y-2">
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Quy trình phân tích thị trường chuyên nghiệp</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Quy trình timing entry/bài đánh chuẩn xác</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Quy trình quản trị vị thế (Position Management)</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Kỷ luật giao dịch và tâm lý trading</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Tự thiết kế bài Trade riêng + Backtest</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Thực hành Demo và Live account</p>
+                            </div>
+                        </div>
+
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3 mt-6">Definition of Done:</h5>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Thực hiện được 100 lệnh demo với tỷ lệ thắng > 70%</li>
+                                <li>• Tự thiết kế và backtest thành công 3 bài trade</li>
+                                <li>• Quản lý được live account với profit factor > 1.5</li>
+                                <li>• Đạt cấp độ TE5 trong hệ thống TE Groups</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3: Trader Recovery -->
+            <div class="course-card bg-white rounded-lg p-8 mb-12">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900">Huấn luyện Trader có kinh nghiệm những vẫn đang lỗ</h4>
+                            <span class="price-tag bg-gray-100 px-3 py-1 rounded-full">25,000,000 VNĐ</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Khóa học chuyên biệt cho trader có kinh nghiệm nhưng chưa profitable. Khảo sát SWOT và đưa ra giải pháp cụ thể.</p>
+                        
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3">Checklist Huấn Luyện:</h5>
+                        <div class="space-y-2">
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Khảo sát đánh giá SWOT trader chi tiết</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Phân tích lịch sử trading và tìm vấn đề</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Đưa ra giải pháp fix cụ thể cho từng vấn đề</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Xây dựng lại psychology và discipline</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Huấn luyện theo lộ trình cá nhân hóa</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Weekly assessment và theo dõi progress</p>
+                            </div>
+                        </div>
+
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3 mt-6">Definition of Done:</h5>
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Xác định được root cause của việc lỗ lãi</li>
+                                <li>• Có plan cụ thể để fix các weakness</li>
+                                <li>• Đạt breakeven trong 30 ngày đầu</li>
+                                <li>• Duy trì profit ổn định 3 tháng liên tiếp</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/fcd9a348-84ed-44bb-b7ac-32ca01277f49" alt="Trader Recovery" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 4: Technical Analysis -->
+            <div class="course-card bg-white rounded-lg p-8 mb-12">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900">Phân tích kỹ thuật thực chiến</h4>
+                            <span class="price-tag bg-gray-100 px-3 py-1 rounded-full">15,000,000 VNĐ</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Huấn luyện phân tích kỹ thuật thực chiến từ Pro Trader với Market Structure, Volume Profile và các bài Timing entry tiêu chuẩn.</p>
+                        
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3">Checklist Huấn Luyện:</h5>
+                        <div class="space-y-2">
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Market Structure Analysis chuyên sâu</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Sóng đẩy và Sóng hồi - nhiều giai đoạn</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ FVG/Order Block và Key Level analysis</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Volume Profile và Ultra volume bar</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Wyckoff concept và hành vi institutional</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Timing entry tiêu chuẩn với ABCD Pattern</p>
+                            </div>
+                        </div>
+
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3 mt-6">Definition of Done:</h5>
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Đọc được Market Structure và predict direction</li>
+                                <li>• Xác định được entry và exit points chính xác</li>
+                                <li>• Áp dụng thành thạo ABCD và ABCD-Dfail patterns</li>
+                                <li>• Đạt tỷ lệ thắng 75%+ với các setup chuẩn</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/82bddd6b-d105-43ea-9a94-1c8c62c6d008" alt="Technical Analysis" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 5: Advanced Tools -->
+            <div class="course-card bg-white rounded-lg p-8 mb-12">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/62a5c3ae-cbbc-4d1c-b29b-1bcbcbe847f4" alt="Advanced Tools" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900">Advances tools</h4>
+                            <span class="price-tag bg-gray-100 px-3 py-1 rounded-full">6,000,000 VNĐ</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Sử dụng MT5 thành thạo như Pro Trader với các bot phòng vệ vốn, copy trade và hỗ trợ giao dịch chuyên nghiệp.</p>
+                        
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3">Checklist Huấn Luyện:</h5>
+                        <div class="space-y-2">
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Sử dụng bot phòng vệ vốn (Stop Loss Management)</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Sử dụng bot copy trade hiệu quả</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Bot hỗ trợ vào lệnh đúng chuẩn an toàn</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Bot hỗ trợ quản lý lệnh tự động</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Huấn luyện sử dụng Indicator chuyên nghiệp</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Tối ưu hóa workspace MT5 như Pro</p>
+                            </div>
+                        </div>
+
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3 mt-6">Definition of Done:</h5>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Setup được workspace MT5 chuyên nghiệp</li>
+                                <li>• Sử dụng thành thạo 5+ bots hỗ trợ</li>
+                                <li>• Tăng hiệu quả giao dịch 50% nhờ automation</li>
+                                <li>• Giảm được 70% thời gian monitor thị trường</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 6: Basic Tools -->
+            <div class="course-card bg-white rounded-lg p-8 mb-12">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/3dbc93c7-6a96-4ed4-8f12-dbfdaa8a0a76" alt="Basic Tools" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900">Basic tools</h4>
+                            <span class="price-tag bg-gray-100 px-3 py-1 rounded-full">5,000,000 VNĐ</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Sàn/Công cụ giao dịch đúng ngay từ đầu. Học cách setup và sử dụng Binance, Exness, MT5 một cách chuyên nghiệp.</p>
+                        
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3">Checklist Huấn Luyện:</h5>
+                        <div class="space-y-2">
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Setup tài khoản Binance chuyên nghiệp</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Sử dụng Exness với spread tối ưu</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Cài đặt và tùy chỉnh MT5 cơ bản</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Security và bảo mật tài khoản</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Hiểu về spread, commission và costs</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Deposit/Withdraw an toàn và hiệu quả</p>
+                            </div>
+                        </div>
+
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3 mt-6">Definition of Done:</h5>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Setup thành công tài khoản trên cả 3 platforms</li>
+                                <li>• Thực hiện được giao dịch cơ bản an toàn</li>
+                                <li>• Hiểu rõ về costs và fees để tối ưu profit</li>
+                                <li>• Bảo mật tài khoản với 2FA và best practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 7: Copy Trade -->
+            <div class="course-card bg-white rounded-lg p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900">Khởi sự kinh doanh vốn hiệu quả với Copytrade</h4>
+                            <span class="price-tag bg-gray-100 px-3 py-1 rounded-full">3,000,000 VNĐ</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Tư duy phát triển vốn và an toàn vốn thông qua Copy Trade. Phương án tạo ra lợi nhuận đều hàng tháng với cộng đồng Trader hiệu quả.</p>
+                        
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3">Checklist Huấn Luyện:</h5>
+                        <div class="space-y-2">
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Tư duy phát triển vốn dài hạn</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Tư duy an toàn vốn và risk management</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Lựa chọn Master Trader chất lượng</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Phương án tạo lợi nhuận đều hàng tháng</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Tham gia cộng đồng Trader hiệu quả</p>
+                            </div>
+                            <div class="checklist-item">
+                                <p class="text-sm text-gray-700">✅ Scaling vốn và compound growth</p>
+                            </div>
+                        </div>
+
+                        <h5 class="text-lg font-semibold text-gray-900 mb-3 mt-6">Definition of Done:</h5>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Setup được portfolio copy trade balanced</li>
+                                <li>• Đạt mục tiêu 5-10% profit/tháng ổn định</li>
+                                <li>• Hiểu và áp dụng được capital allocation</li>
+                                <li>• Tham gia active trong community network</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/888f7806-9954-44ec-981e-7c5c1d08ece1" alt="Copy Trade" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-900">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-white mb-4">Sẵn sàng bắt đầu hành trình Trading của bạn?</h3>
+            <p class="text-xl text-gray-300 mb-8">Đội ngũ tư vấn chuyên nghiệp sẽ giúp bạn lựa chọn khóa học phù hợp nhất với mục tiêu và trình độ hiện tại.</p>
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-lg">
+                <div class="flex items-center justify-center space-x-4">
+                    <i class="fas fa-comments text-4xl text-white"></i>
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-2">Chat với chúng tôi để đăng ký khóa học</h4>
+                        <p class="text-lg text-gray-200">Tư vấn miễn phí và lựa chọn lộ trình học tập phù hợp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center space-x-4 mb-4">
+                <img src="https://page.gensparksite.com/v1/base64_upload/b81a5f81726ed4691fe96337a26bf158" alt="CX Academy Logo" class="h-8 w-auto">
+                <div>
+                    <h5 class="text-lg font-bold text-gray-900">CX Academy</h5>
+                    <p class="text-sm text-gray-600">Wisdom – Peace and Money</p>
+                </div>
+            </div>
+            <p class="text-gray-600">© 2024 CX Academy. Hệ thống đào tạo Trader chuyên nghiệp dựa trên "The Richness Trader Notes"</p>
+        </div>
+    </footer>
+</body>
+</html>
